@@ -49,23 +49,14 @@ def set_weekend_start(weekend):
             for j in range(len(weekend[i][1])):
                 schedule[worker][1][weekend[i][1][j] - 1] = 'В'
 
+def write_schedule():
+    #writer = pd.ExcelWriter("schedule_output.xlsx", engine='xlsxwriter')
+    pass
+
 data = pd.read_excel('Schedule.xls', sheet_name='График',
                      skiprows=5, index_col=None, header=None)
 
-work_shifts = [
-
-
-
-
-
-
-
-
-
-
-
-
-]
+work_shifts = []
 
 print("Enter the number of employees: ")
 count_employees = int(input())
